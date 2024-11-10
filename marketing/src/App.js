@@ -14,7 +14,7 @@ const generateClassName = createGenerateClassName({
 
 export default ({ history }) => {
   return (
-    <div>
+    <>
       <StylesProvider generateClassName={generateClassName}>
         <Router history={history}>
           <Switch>
@@ -23,6 +23,6 @@ export default ({ history }) => {
           </Switch>
         </Router>
       </StylesProvider>
-    </div>
+    </>
   );
 };
